@@ -1,0 +1,22 @@
+server:
+  port: 5210
+spring:
+  application:
+    name: 瑞吉外卖-第二遍
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ruiji-waimai
+    username: root
+    password: 123456
+mybatis-plus:
+  configuration:
+    #映射实体类时将数据库中的表名或者字段名中的下划线去掉，使用驼峰命名法
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: assign_id
+
+#自定义文件存储位置
+ruiji:
+  path: C:\Users\rdqai\Desktop\工作项目学习个人\学习\ruiji\ruiji_waimai\src\pic\
